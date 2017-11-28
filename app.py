@@ -23,7 +23,7 @@ def use_memory():
 @app.route('/')
 def user_list():
     use_cpu()
-    return jsonify(users=users)
+    return jsonify(users=[])
 
 
 app.run(host='0.0.0.0', port=80)
